@@ -1,38 +1,107 @@
+body {
+  background: radial-gradient(circle, #666666 0%, #555555 20%, #333333 65%, #222222 100%);
+}
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.bg-start {
+  background-image: url("../public/assets/images/bg-start.png");
+  background-size: cover;
+  background-position: center;
+}
+.bg-thunder {
+  background-image: url("../public/assets/images/bg-thunder.png");
+  background-size: cover;
+  background-position: center;
+}
+.bg-drizzle {
+  background-image: url("../public/assets/images/bg-drizzle.png");
+  background-size: cover;
+  background-position: center;
+}
+.bg-rain {
+  background-image: url("../public/assets/images/bg-rain.png");
+  background-size: cover;
+  background-position: center;
+}
+.bg-snow {
+  background-image: url("../public/assets/images/bg-snow.png");
+  background-size: cover;
+  background-position: center;
+}
+.bg-atmos {
+  background-image: url("../public/assets/images/bg-atmos.png");
+  background-size: cover;
+  background-position: center;
+}
+.bg-clear {
+  background-image: url("../public/assets/images/bg-clear.png");
+  background-size: cover;
+  background-position: center;
+}
+.bg-clouds {
+  background-image: url("../public/assets/images/bg-clouds.png");
+  background-size: cover;
+  background-position: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.weather-icon {
+  width: 60px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.forecast-icon {
+  width: 40px;
 }
 
-.App-link {
-  color: #61dafb;
+.text-shadow {
+  text-shadow: 0 0 7px white;
 }
 
-@keyframes App-logo-spin {
+.text-footer {
+  color: rgb(139, 167, 158);
+  font-size: 0.85rem;
+}
+
+.brk-long-txt {
+  max-width: 165px;
+}
+
+::selection {
+  background-color: #85cda0;
+  color: #000000;
+}
+
+.rad-gradient {
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.2) 0%,
+    rgb(255, 255, 255, 0.15) 50%,
+    rgb(255, 255, 255, 0.03) 65%,
+    rgb(255, 255, 255, 0) 100%
+  );
+}
+
+.bg-input {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.bg-input:focus {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+@keyframes fadeIn {
   from {
-    transform: rotate(0deg);
+    opacity: 0;
   }
   to {
-    transform: rotate(360deg);
+    opacity: 1;
   }
+}
+
+.fade-in {
+  animation: fadeIn 1.5s;
+}
+.fade-in-background {
+  animation: fadeIn 0.3s ease-in-out;
 }
